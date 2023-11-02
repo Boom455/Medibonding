@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
+
+* {
+    font-family: 'Mitr', sans-serif;
+}
+
+.bg {
+    background-color: #abb4ce6b;
+}
+
+.content {
+    max-width: 514px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 13px 4px #00000014;
+    background-color: #f7f7f8;
+}
+
+.btn-custom-lang {
+    border: solid 2px #555555;
+    border-radius: 17px;
+    box-shadow: 0 3px 0 #22222230;
+    background-color: #ffffff;
+}
+.btn-custom-lang:hover {
+    border: solid 2px #555555;
+    box-shadow: 0 3px 0 #22222230;
+    background-color: #c7c7c7;
+}
+
+.btn-custom{
+    color: #fefefe;
+    background-color: rgb(29, 45, 95) !important;
+}
+
+.btn-custom:hover, .btn-custom.active{
+    color: #fefefe;
+    background-color: rgb(17, 25, 46) !important;
+}
+
+.nav-custom {
+    background-color: rgb(29, 45, 95) !important;
+}
+#header {
+    background-color: #f5efd5;
+    padding: 1em;
+    color: #ffffff;
+    vertical-align: middle;
+}
+#video {
+    background-color: #f5efd5;
+    height: 450px;
+}
+#body {
+    height: 280px;
+    background-color: #e3e3e3;
+    border: 5px #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#body > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo_medbon {
+    /*padding-left: 32.985px;
+    padding-top: 65px;*/
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 65px;
+}
+#txtbox {
+    border-radius: 7px;
+    border: solid 1.5px #15234b;
+    padding: 10px;
+    text-align: left;
+    margin: 5px;
+    width: 300px;
+}
+#showpass {
+    size: 10px;
+    size-adjust: 10px;
+    tab-size: 10px;
+    block-size: 10px;
+}
+#loginbtn {
+    background-color: #01acc8;
+    color: #fff;
+    border-radius: 7px;
+    border-width: 0;
+    text-align: center;
+    margin: 0 90.2px 0 90.2px;   /*top left bottom right*/
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 300px;
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+}
+#notreg {
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: center;
+}
+#reg {
+    text-decoration: underline;
+    background: none;
+    border: none;
+    cursor: pointer;
+}

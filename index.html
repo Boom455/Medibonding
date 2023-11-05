@@ -26,9 +26,10 @@
                         </div>
                         <div id="video">
                             <div>
-                                <div style="text-align: center;padding: .7em 0 .25em 0; font-size: 25px;">
+                                <div style="text-align: center;padding: .7em 0 .25em 0; font-size: 25px; letter-spacing: 1.5px;">
                                     <b>เข้าสู่ระบบ</b>
                                 </div>
+                                <form>
                                 <div class="input-group mb-3" style="
                                 text-align: center;
                                 align-content: center;
@@ -36,14 +37,21 @@
                                 align-items: center;">
                                     <input type="text" placeholder="HN/เลขบัตรประชาชน" class="input input-ghost w-full max-w-xs" id="txtbox"/>
                                     <br>
-                                    <input type="text" placeholder="รหัสผ่าน" class="input input-ghost w-full max-w-xs" id="txtbox"/>
+                                    <div class="container" id="contentpasswordbox" style="display: flex; margin: 0 auto 0 auto;">
+                                        <input type="password" placeholder="รหัสผ่าน" id="password" name="password"/>
+                                        <img src="/img/notshowpasslogo.png" id="toggleImage" width="45.6px" 
+                                        style="cursor: pointer; align-items: center; align-content: center;" 
+                                        alt="Show Password" onclick="togglePassword()">
+                                    </div>
                                 </div>
-                                <div class="btn btn-custom-lang" role="button" href="/" id="loginbtn" >
-                                    เข้าสู่ระบบ
+                                </form>
+                                <div class="col-12">
+                                    <a  class="btn" role="button" href="/booking" id="loginbtn" >
+                                        เข้าสู่ระบบ</a>
                                 </div>
                                 <span >
                                     <h1 id="notreg">
-                                        ยังไม่ลงทะเบียน? <button id="reg" href="/">ลงทะเบียน</button>
+                                        ยังไม่ลงทะเบียน? <a role="button" id="reg" href="/newreg">ลงทะเบียน
                                     </h1>
                                 </span>
                             </div>
@@ -58,6 +66,22 @@
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
             crossorigin="anonymous"
         ></script>
+        <script>
+            function togglePassword() {
+                var passwordInput = document.getElementById("password");
+                var toggleImage = document.getElementById("toggleImage");
+    
+                if (passwordInput.type === "password") {
+                    passwordInput.type = "text";
+                    toggleImage.src = "/img/showpasslogo.png";
+                    toggleImage.alt = "Hide Password";
+                } else {
+                    passwordInput.type = "password";
+                    toggleImage.src = "/img/notshowpasslogo.png";
+                    toggleImage.alt = "Show Password";
+                }
+            }
+        </script>
     </body>
 </html>
 

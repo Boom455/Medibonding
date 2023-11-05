@@ -31,7 +31,6 @@
     color: #fefefe;
     background-color: rgb(29, 45, 95) !important;
 }
-
 .btn-custom:hover, .btn-custom.active{
     color: #fefefe;
     background-color: rgb(17, 25, 46) !important;
@@ -65,8 +64,6 @@
     align-items: center;
 }
 #logo_medbon {
-    /*padding-left: 32.985px;
-    padding-top: 65px;*/
     align-content: center;
     display: flex;
     justify-content: center;
@@ -75,11 +72,29 @@
 }
 #txtbox {
     border-radius: 10px;
-    border: solid 1.5px #15234b;
+    border: solid 1.5px #bfbebe;
     padding: 10px 10px 10px 20px;
     text-align: left;
     margin: 5px;
     width: 300px;
+}
+#password {
+    border-radius: 10px;
+    border: none;
+    padding: 10px 10px 10px 20px;
+    text-align: left;
+    width: 260px;
+}
+#contentpasswordbox {
+    border-radius: 10px;
+    border: solid 1.5px #bfbebe;
+    padding: 0;
+    text-align: left;
+    margin: 0;
+    width: 300px;
+    justify-content: left;
+    justify-items: left;
+    background-color: #fff;
 }
 #showpass {
     size: 10px;
@@ -92,15 +107,27 @@
     color: #fff;
     border-radius: 10px;
     border-width: 0;
-    text-align: center;
-    margin: 0 90.2px 0 90.2px;   /*top left bottom right*/
-    align-content: center;
+    text-align: center;  
     justify-content: center;
-    align-items: center;
-    display: flex;
+    display: block;
     width: 300px;
     padding: 10px 0 10px 0;
     font-size: 20px;
+    margin: 0 auto;
+}
+
+#loginbtn:hover {
+    background-color: #00879e;
+    color: #fff;
+    border-radius: 10px;
+    border-width: 0;
+    text-align: center;  
+    justify-content: center;
+    display: block;
+    width: 300px;
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+    margin: 0 auto;
 }
 #notreg {
     margin-top: 15px;
@@ -112,12 +139,15 @@
     background: none;
     border: none;
     cursor: pointer;
+    font-size: 15px;
+    color: #111;
 }
 #header1 {
     height: 130px;
     background-color: #01acc8;
     border: solid 2px #01acc8;
     border-radius: 0px 0px 60px 60px;
+    padding: 0 1em;
 }
 #video1 {
     height: 669px;
@@ -134,24 +164,28 @@
 }
 #bookbox {
     border-radius: 10px;
-    border: solid 1.5px #15234b;
-    padding: 10px 10px 10px 20px;
+    border: solid 1.5px #bfbebe;
+    padding: 0;
     text-align: left;
-    margin: 10px 5px 5px 5px;
     width: 420px;
+    background-color: #fff;
+    margin: 20px auto auto auto;
 }
 #bookdaybox {
     border-radius: 10px;
-    border: solid 1.5px #15234b;
+    border: solid 1.5px #bfbebe;
     padding: 10px;
     text-align: left;
-    margin: 5px 5px;
-    width: 420px;
-    height: 280px;
+    margin: 5px auto 5px;
+    max-width: 420px;
+    max-height: 280px;
+    background-color: #fff;
+    color: #111;
+    flex: 10;
 }
 #symptombox {
     border-radius: 7px;
-    border: solid 1.5px #15234b;
+    border: solid 1.5px #bfbebe;
     padding: 10px 10px 10px 20px;
     text-align: left;
     margin: 10px 5px 5px 5px;
@@ -159,7 +193,7 @@
 }
 #numberbox {
     border-radius: 7px;
-    border: solid 1.5px #15234b;
+    border: solid 1.5px #bfbebe;
     padding: 5px 10px 10px 20px;
     text-align: left;
     margin: 10px 5px 5px 5px;
@@ -171,13 +205,59 @@
     border-radius: 7px;
     border-width: 0;
     text-align: center;
-    margin: 0 30.2px 0 30.2px;   /*top left bottom right*/
+    margin: 0 auto;   /*top left bottom right*/
     align-content: center;
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 420px;
+    max-width: 420px;
     font-size: 20px;
+    flex: 10;
+}
+#jongqbtn:hover {
+    background-color: #00879e;
+    color: #fff;
+    border-radius: 7px;
+    border-width: 0;
+    text-align: center;
+    margin: 0 auto;   /*top left bottom right*/
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-width: 420px;
+    font-size: 20px;
+    flex: 10;
+}
+#jongqbtn1 {
+    background-color: #01acc8;
+    color: #fff;
+    border-radius: 7px;
+    border-width: 0;
+    text-align: center;
+    margin: 0 1em;   /*top left bottom right*/
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-width: 420px;
+    font-size: 20px;
+    flex: 10;
+}
+#jongqbtn1:hover {
+    background-color: #00879e;
+    color: #fff;
+    border-radius: 7px;
+    border-width: 0;
+    text-align: center;
+    margin: 0 1em;   /*top left bottom right*/
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-width: 420px;
+    font-size: 20px;
+    flex: 10;
 }
 #bottom1 {
     background-color: #01acc8;
@@ -203,25 +283,155 @@
     padding: 10px 0 10px 0;
     margin: 50px 30.2px 0 30.2px;
     border-radius: 50px;
-    width: 420px;
+    max-width: 420px;
+    max-height: 101.725;
+    flex: 10;
+}
+#menu1 {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #01acc8;
+    padding: 10px 0 10px 0;
+    margin: 200px 30.2px 0 30.2px;
+    border-radius: 50px;
+    max-width: 420px;
+    max-height: 101.725;
+    flex: 10;
+}
+#menu2 {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #01acc8;
+    padding: 10px 0 10px 0;
+    margin: 55px 30.2px 0 30.2px;
+    border-radius: 50px;
+    max-width: 420px;
+    max-height: 101.725;
+    flex: 10;
+}
+#bookbox1 {
+    border-radius: 10px;
+    border: solid 1.5px #bfbebe;
+    padding: 10px 10px 10px 20px;
+    text-align: left;
+    margin: 10px auto;
+    max-width: 420px;
+    flex: 10;
 }
 #reginfbox {
     border-radius: 10px;
-    border: solid 1.5px #15234b;
+    border: solid 1.5px #bfbebe;
     padding: 10px 10px 10px 20px;
     text-align: left;
-    margin: 5px 5px 5px 5px;
-    width: 420px;
+    margin: 4px auto;
+    max-width: 420px;
+    flex: 10;
 }
-#reginfbox2 {
+/*#reginfbox2 {
     border-radius: 10px;
-    border: solid 1.5px #15234b;
+    border: solid 1.5px #bfbebe;
     padding: 10px 10px 10px 20px;
     text-align: left;
-    margin: 5px 5px 5px 5px;
-    width: 205px;
+    margin: 4px 5px 5px 5px;
+    max-width: 205px;
+    flex: 2;
+}*/
+#reg1 {
+    text-decoration: none;
+    background: #01acc8 ;
+    border: solid 1px #111 ;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    padding: 5px 1em;
+    max-width: 420px;
+    margin: auto auto;
+    border-color: #bfbebe;
+    flex: 10;
+}
+#reg1:hover {
+    text-decoration: none;
+    background-color: #00879e;
+    border: solid 1px #111 ;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    padding: 5px 1em;
+    max-width: 420px;
+    margin: auto auto;
+    border-color: #bfbebe;
+    flex: 10;
 }
 #header2 {
     height: 799px;
     background-color: #f5efd5;
+}
+#informbox {
+    border-radius: 10px;
+    border: solid 2px #bfbebe;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    max-width: 420px;
+    height: 460.2px;
+    background-color: #fff;
+    flex: 10;
+}
+.historybox {
+    border-radius: 5px;
+    border: solid 2px #bfbebe;
+    padding: 10px 0 10px 10px;
+    text-align: left;
+    width: 420px;
+    height: 80.2px;
+    background-color: #CDEDFB;
+    flex: 10;
+    margin: 0 1em 0 1em;
+    transition: height 0.5s;
+}
+.historyboxinc {
+    border-radius: 5px;
+    border: solid 2px #bfbebe;
+    padding: 10px 0 10px 10px;
+    text-align: left;
+    width: 420px;
+    height: 200.2px;
+    background-color: #fff;
+    flex: 10;
+    margin: 0 1em 0 1em;
+    transition: height 0.5s;
+}
+.calendar {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    background-color: #fff;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+
+}
+
+.calendar th, .calendar td {
+    width: 50px;
+    height: 37.5px;
+    text-align: center;
+}
+
+.calendar th {
+    background-color: #fff;
+    color: #111;
 }

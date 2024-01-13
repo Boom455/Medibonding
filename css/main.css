@@ -152,6 +152,13 @@
     height: 669px;
     background-color: #f5efd5;
 }
+#video2 {
+    height: 669px;
+    background-color: #f5efd5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #booking {
     font-size: 30px;
     align-content: center;
@@ -448,4 +455,19 @@
 .calendar th {
     background-color: #fff;
     color: #111;
+}
+#containerboxnewreg1 {
+    border-radius: 15px;
+    border: solid 2px #bfbebe;
+    padding: 10px;
+    margin: 10px;
+    height: 580px;
+    width: 450px;
+    background-color: #fff;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
 }

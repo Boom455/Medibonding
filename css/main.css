@@ -48,7 +48,7 @@
 }
 #video {
     background-color: #f5efd5;
-    height: 450px;
+    height: 490px;
 }
 #body {
     height: 280px;
@@ -149,7 +149,7 @@
     padding: 0 1em;
 }
 #video1 {
-    height: 669px;
+    height: 677px;
     background-color: #f5efd5;
 }
 #video2 {
@@ -189,7 +189,7 @@
     flex: 10;
 }
 #forget {
-    margin-left: 110px;
+    padding-left: 15vw;
     text-decoration: none;
     font-size: 14px;
     color: #111;
@@ -201,7 +201,6 @@
 #forget1 {
     text-decoration: none;
     color: #111;
-    
 }
 #symptombox {
     border-radius: 7px;
@@ -293,47 +292,36 @@
     width: 420px;
     font-size: 20px;
 }
-#menu {
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    background-color: #01acc8;
-    padding: 10px 0 10px 0;
-    margin: 50px 30.2px 0 30.2px;
-    border-radius: 50px;
-    max-width: 420px;
-    max-height: 101.725;
-    flex: 10;
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
 }
-#menu1 {
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    background-color: #01acc8;
-    padding: 10px 0 10px 0;
-    margin: 200px 30.2px 0 30.2px;
-    border-radius: 50px;
-    max-width: 420px;
-    max-height: 101.725;
-    flex: 10;
+
+.card-body {
+    padding: 20px;
 }
-#menu2 {
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
+
+.bottom-menu {
     display: flex;
     background-color: #01acc8;
-    padding: 10px 0 10px 0;
-    margin: 55px 30.2px 0 30.2px;
-    border-radius: 50px;
-    max-width: 420px;
-    max-height: 101.725;
-    flex: 10;
+    color: #fff;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-between;
+    width: 92.195%;
+    height: 110px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bottom-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
 }
 #bookbox1 {
     border-radius: 10px;
@@ -392,6 +380,24 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+}
+.circle-button1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #00879e; /* Set the background color as needed */
+    color: #fff; /* Set the text color as needed */
+    width: 80px; /* Set the width and height to create a circle */
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px; /* Aligns text vertically in the center */
+    font-size: 16px;
+    box-shadow: 0 4px 5px #555555; /*top right bottom left*/
+    cursor: pointer;
 }
 #reginfbox3 {
     border-radius: 10px;
@@ -505,9 +511,15 @@
     max-width: 450px;
     background-color: #fff;
     box-shadow: 0 0px 7px #555555; /*top right bottom left*/
-
-    
-
+}
+#containerboxnewreg2 {
+    border-radius: 50px;
+    padding: 0 10px 20px 10px;
+    margin: 15px auto;
+    height: 450px;
+    max-width: 420px;
+    background-color: #fff;
+    box-shadow: 0 0px 7px #555555; /*top right bottom left*/
 }
 #inside {
     text-align: center;

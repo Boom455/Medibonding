@@ -48,7 +48,7 @@
 }
 #video {
     background-color: #f5efd5;
-    height: 490px;
+    height: 65vh;
 }
 #body {
     height: 280px;
@@ -113,7 +113,7 @@
     width: 300px;
     padding: 10px 0 10px 0;
     font-size: 20px;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 
 #loginbtn:hover {
@@ -127,7 +127,7 @@
     width: 300px;
     padding: 10px 0 10px 0;
     font-size: 20px;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 #notreg {
     margin-top: 15px;
@@ -149,11 +149,11 @@
     padding: 0 1em;
 }
 #video1 {
-    height: 677px;
+    min-height: 84vh;
     background-color: #f5efd5;
 }
 #video2 {
-    height: 750px;
+    height: 84vh;
     background-color: #f5efd5;
     align-items: center;
     justify-content: center;
@@ -181,11 +181,18 @@
     border: solid 1.5px #bfbebe;
     padding: 10px;
     text-align: left;
-    margin-top: 5px;
+    margin-top: 15px;
     max-width: 420px;
     max-height: 280px;
     background-color: #fff;
     color: #111;
+    text-align: left;
+    align-content: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
 }
 #forget {
     padding-left: 15vw;
@@ -206,7 +213,7 @@
     border: solid 1.5px #bfbebe;
     padding: 10px 10px 10px 20px;
     text-align: left;
-    margin: 10px 0 5px 0;
+    margin: 8px 0 5px 0;
     width: 420px;
 }
 #numberbox {

@@ -34,7 +34,7 @@
                                 justify-content: center;
                                 align-items: center;
                                 display: flex;">
-                                <label id="myLabel" class="row historybox">
+                                <label id="myLabel" class="row historybox" class="expandable-box" onclick="toggleExpansion()">
                                     <div class="col-4">
                                         <img src="/img/e4.png" style="width: 60px; margin-left: 5px;">
                                     </div>
@@ -44,7 +44,15 @@
                                         <br>
                                         อาการ.......
                                         </h1>
-                                    </div>
+                                        <br>
+                                        <div class="more-info" >
+                                            <h>เวลา xx.xx น. โดยประมาณ</h><br>
+                                            <h>รหัสคิว B1234</h><br>
+                                        </div>
+                                        <div>
+                                            <img src="/img/qrexam.png" width="70px">
+                                        </div>
+                                        </div>
                                 </label>
                                 </div>
                             </div>
@@ -126,18 +134,11 @@
             crossorigin="anonymous"
         ></script>
         <script>
-
-            var label = document.getElementById("myLabel");
-
-            label.addEventListener("click", function() {
-            if (label.classList.contains("historybox")) {
-            label.classList.remove("historybox");
-            label.classList.add("historyboxinc");
-            } else {
-            label.classList.remove("historyboxinc");
-            label.classList.add("historybox");
-            }
-            });
+            
+            function toggleExpansion() {
+            var box = document.querySelector('.historybox');
+            box.classList.toggle('historyboxinc');
+        }
         </script>
     </body>
 </html>

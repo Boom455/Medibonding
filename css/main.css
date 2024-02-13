@@ -83,7 +83,7 @@
     border: none;
     padding: 10px 10px 10px 20px;
     text-align: left;
-    width: 260px;
+    width: 300px;
 }
 #contentpasswordbox {
     border-radius: 10px;
@@ -472,6 +472,8 @@
     flex: 10;
     margin: 0 1em 0 1em;
     transition: height 0.5s;
+    overflow: hidden;
+    cursor: pointer;
 }
 .historyboxinc {
     border-radius: 5px;
@@ -479,12 +481,25 @@
     padding: 10px 0 10px 10px;
     text-align: left;
     width: 420px;
-    height: 200.2px;
+    height: 210.2px;
     background-color: #fff;
     flex: 10;
     margin: 0 1em 0 1em;
     transition: height 0.5s;
 }
+.expandable-box {
+            width: 200px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            overflow: hidden;
+            transition: height 0.3s ease;
+            cursor: pointer;
+            height: 60px;
+        }
+
+        .expanded {
+            height: 70px; /* Adjust the height you want when expanded */
+        }
 .calendar {
     font-family: Arial, sans-serif;
     border-collapse: collapse;
